@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Test</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <header>
+                <h1>Test</h1>
+            </header>
+            <article>
+                <label for="inputItem">Name/Value Pair</label>
+                <div class="section-container">
+                    <div class="main">
+                        <input
+                                id="inputItem"
+                                placeholder="Name=Value"
+                        />
+                    </div>
+                    <div class="aside add">
+                        <button id="addBtn">Add</button>
+                    </div>
+                </div>
+                <label for="inputList">Name/Value Pair List</label>
+                <div class="section-container pairsContainer">
+                    <div class="main">
+                        <div id="inputList" readonly>
+                            <ul id="list"></ul>
+                        </div>
+                    </div>
+                    <div class="aside btns">
+                        <div>
+                            <button id="sortByNameBtn">Sort by Name</button>
+                        </div>
+                        <div>
+                            <button id="sortByValueBtn">Sort by Value</button>
+                        </div>
+                        <div>
+                            <button id="deleteBtn">Delete</button>
+                        </div>
+                        <div>
+                            <button id="showXmlBtn">Show XML</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span id="close">&times;</span>
+                        <div id="modalMessage"></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
